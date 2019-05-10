@@ -1,0 +1,57 @@
+body .btn-youtube, body .btn-facebook {
+  padding: 10px 25px;
+  color: #fff;
+  border: 0;
+  border-radius: 7px;
+  font-size: .9rem;
+}
+
+html {
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5))), url("../../images/cover.jpg");
+  background-image: linear-gradient(to top rgba(0, 45, 80, 0), rgba(0, 0, 0, 0.5)), url("../../images/cover.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+body {
+  margin: 0;
+  text-align: center;
+}
+
+body h1 {
+  color: #ff9f1a;
+  margin-top: 5%;
+  font-size: 3rem;
+}
+
+body p {
+  color: #eaf0f1;
+  font-size: 2rem;
+}
+
+body .page {
+  font-size: 2rem;
+  color: #dfe6e9;
+  margin-top: 5%;
+}
+
+body .container {
+  margin-top: 3%;
+}
+
+body .btn-youtube {
+  background-color: #c0392b;
+}
+
+body .btn-facebook {
+  background-color: #2980b9;
+}
+
+body .main {
+  margin-top: 5%;
+  font-size: 1.2em;
+  color: #ffaf40;
+}
+/*# sourceMappingURL=about.css.map */

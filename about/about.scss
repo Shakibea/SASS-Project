@@ -1,0 +1,43 @@
+@import "mixins";
+@import "btn";
+
+html {
+    height: 100vh;
+    @include coverimage("../../images/cover.jpg");
+}
+
+body {
+    margin: 0;
+    text-align: center;
+    h1 {
+        color: #ff9f1a;
+        margin-top: 5%;
+        font-size: 3rem;
+      }
+    p {
+        color: #eaf0f1;
+        font-size: 2rem;
+    }
+    .page {
+        font-size: 2rem;
+        color: #dfe6e9;
+        margin-top: 5%;
+    }
+    .container {
+        margin-top: 3%;
+    }
+    //inheritance
+    .btn-youtube {
+        @extend %btn;
+        background-color: #c0392b;
+    }
+    .btn-facebook {
+        @extend %btn;
+        background-color: #2980b9;
+    }
+    .main {
+        margin-top: 5%;
+        font-size: 1.2em;
+        color: #ffaf40;
+    }
+}

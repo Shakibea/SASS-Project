@@ -1,0 +1,97 @@
+// $color-primary: #0a3d62;
+// $color-accent: #e67e22;
+// $color-font: #fff;
+
+$color: (
+    primay: #0a3d62,
+    accent: #e67e22,
+    font: #fff
+);
+
+$sizes: (
+    fontone: 21px,
+    fonttwo: 15px,
+    fontthree: 18px
+);
+
+//in function only 1 or 2 param can create
+@function color($colorName){ 
+    @return map-get($map: $color, $key: $colorName); 
+}
+@function font($fontSize){
+    @return map-get($map: $sizes, $key: $fontSize);
+}
+
+body, html{
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    color: color(accent);
+
+    .container{
+        clip-path: polygon(65% 0, 100% 9%, 100% 83%, 50% 100%, 0 90%, 0 0);   //css clip path
+        background-color: color(primay);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+    }
+    a{
+        text-decoration: none;
+        color: color(font);
+        font: {
+            size: font(fonttwo);
+        }
+    }
+    header {
+         a{
+            text-decoration: none;
+            color: color(accent); 
+            font-size: 1.5rem;
+            padding-top: 20px;
+            text-align: center;
+            display: block; 
+        }
+    }
+}
+
+main {
+    section#image {
+      background-color: color(accent);
+      padding: 20px;
+      margin: 1em auto;
+      width: 80%;
+      color: color(font);
+      border-radius: 15px;
+        p {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            margin-bottom: -2px;
+        }
+    }
+
+    section#text1 {
+        padding: 15px;
+        text-align: center;
+        h1 {   
+            margin-top: -15px;
+            font-size: 2em;
+        }
+        p {
+            margin-top: -15px;
+        }
+        a {
+            
+            margin-top: 15px;
+            color: color(font);
+            background-color: color(accent);
+            padding: 5px 40px;
+            text-decoration: none;
+            font-size: 1.5em;
+            border-radius: 5px;
+          }
+    }
+}
